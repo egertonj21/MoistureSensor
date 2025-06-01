@@ -103,7 +103,7 @@ void loop() {
 
   // Automatic reporting
   static unsigned long lastReport = 0;
-  if (millis() - lastReport > (REPORT_INTERVAL_MIN * 60 * 1000)) {
+  if (millis() - lastReport > (READ_INTERVAL_MIN * 60 * 1000)) {
     publishMoisture();
     lastReport = millis();
   }
